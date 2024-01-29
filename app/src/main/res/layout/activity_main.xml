@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="10sp"
+
+        android:layout_marginBottom="100sp"
+        android:layout_centerHorizontal="true"
+        android:text="Location Info"
+        android:textAlignment="center"
+        android:textColor="@color/straw"
+        android:textSize="30sp" />
+
+    <!-- Location Info cardview -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="195sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50sp"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longitude"
+            android:text="@string/lat"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherText"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/lon"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95sp"
+            android:text="@string/city"
+            android:textAlignment="center"
+            android:textSize="33sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330sp"
+        android:layout_marginEnd="40sp"
+        android:text="@string/reload"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="110sp"
+        android:layout_marginTop="450sp"
+        android:text="@string/weatherinfo"
+        android:textAlignment="center"
+        android:textColor="@color/straw"
+        android:textSize="30sp" />
+
+    <!--weather info card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="95sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="500sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+
+        app:cardPreventCornerOverlap="true">
+
+        <TextView
+            android:id="@+id/tempText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="33 C, Haze"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="65sp"
+            android:textColor="@color/teal_200"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_fog" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/loadingText"/>
+
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Loading"
+        android:textSize="30sp" />
+
+
+
+
+</RelativeLayout>

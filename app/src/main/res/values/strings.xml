@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather-Gps APP</string>
+    <string name="lon">lon</string>
+    <string name="lat">lat</string>
+    <string name="weather">Rain</string>
+    <string name="city">Location</string>
+    <string name="temp">temperature</string>
+    <string name = "reload">reload</string>
+    <string name = "weatherinfo">Weather Info</string>
+</resources>
