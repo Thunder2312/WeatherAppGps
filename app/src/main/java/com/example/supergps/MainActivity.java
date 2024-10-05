@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     final static int MY_PERMISSIONS_ACCESS_FINE_LOCATION = 1;
     final static String API_URL = "https://api.openweathermap.org/data/2.5/weather";
-    final static String KEY = "ffc2846d4cdf263c6126bcdff348e461";
+    final static String KEY = "YOUR_API_KEY";
 
 
     double latitude;
